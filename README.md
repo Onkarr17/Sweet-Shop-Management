@@ -58,21 +58,25 @@ src/main/java/com/sweetshop/sweetshop_api
 🔹 Register User
 POST /auth/register
 *Request Body*
+
             {
                "username": "onkar",
                "password": "password123"
             }
 *Response*
+
             User registered successfully
 
 🔹 Login User
 POST /auth/login
 *Request Body*
+
             {
                "username": "onkar",
                "password": "password123"
             }
 *Response*
+
             {
               "token": "eyJhbGciOiJIUzI1NiJ9..."
             }
@@ -80,8 +84,10 @@ POST /auth/login
 🔹 Access Secured API
 GET /test/secure
 *Header*
+
          Authorization: Bearer <JWT_TOKEN>
 *Response*
+
          Access granted
 
 🧪 API Testing with Postman

@@ -168,7 +168,6 @@ Accessing secured endpoints
 403 Forbidden without JWT
 
 Postman Screenshots
-
 Screenshots/
 ├── register.png
 ├── login.png
@@ -202,7 +201,7 @@ Service-level unit tests can be added using JUnit and Mockito following a
 TDD (Test-Driven Development) approach.
 
 👨‍💻 Author
-*Onkar Hadgaonkar*
+**Onkar Hadgaonkar** : 
 Backend Developer | Java | Spring Boot
 
 

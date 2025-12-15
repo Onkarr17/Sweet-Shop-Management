@@ -34,14 +34,21 @@ This backend implements JWT-based authentication, follows a clean layered archit
 🛠️ **Tech Stack**
 
 Language - Java 17,
+
 Framework -  Spring Boot 4,
+
 Security	-  Spring Security + JWT,
+
 ORM       -  Spring Data JPA (Hibernate),
+
 Database	-  H2 (In-memory),
+
 Build Tool - Maven,
+
 API Testing	- Postman
 
 📂 Project Structure
+
 src/main/java/com/sweetshop/sweetshop_api
 ├── controller  
 │   ├── AuthController.java        # User registration & login APIs  

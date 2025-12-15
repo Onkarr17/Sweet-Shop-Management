@@ -41,7 +41,6 @@ Build Tool - Maven,
 API Testing	- Postman
 
 📂 Project Structure
-## 📂 Project Structure
 src/main/java/com/sweetshop/sweetshop_api
 ├── controller  
 │   ├── AuthController.java        # User registration & login APIs  
@@ -72,11 +71,12 @@ src/main/java/com/sweetshop/sweetshop_api
 
 
 🚀 How to Run the Project Locally
+
 **Prerequisites**
-         Java 17 or higher
-         Maven 3.9+
-         IDE (IntelliJ IDEA / VS Code)
-         Postman
+      Java 17 or higher
+      Maven 3.9+
+      IDE (IntelliJ IDEA / VS Code)
+      Postman
 
            git clone https://github.com/Onkarr17/Sweet-Shop-Management.git
            cd sweetshop-api
@@ -139,22 +139,22 @@ POST /api/sweets
                     "price": 500,
                     "quantity": 10
                }
-🔹 Get All Sweets
+🔹 Get All Sweets :
 GET /api/sweets
 
-🔹 Search Sweets
+🔹 Search Sweets :
 GET /api/sweets/search?name=Kaju&category=Indian
 
-🔹 Update Sweet
+🔹 Update Sweet :
 PUT /api/sweets/{id}
 
-🔹 Delete Sweet
+🔹 Delete Sweet :
 DELETE /api/sweets/{id}
 
-🔹 Purchase Sweet
+🔹 Purchase Sweet :
 POST /api/sweets/{id}/purchase
 
-🔹 Restock Sweet
+🔹 Restock Sweet :
 POST /api/sweets/{id}/restock
 
 
@@ -192,6 +192,7 @@ Authorized access to protected endpoints
               server.port=${PORT:8080}
 
 🧪 Testing Approach
+
 The application was designed with testability in mind, keeping business logic
 inside the service layer.
 Due to time constraints, functionality was validated through manual API testing

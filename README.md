@@ -117,12 +117,12 @@ Authorized access to protected endpoints
               jwt.expiration=86400000
 
 🚀 Future Enhancements
-Role-based authorization (ADMIN / USER)
-Sweet items CRUD APIs
-Order management
-PostgreSQL integration
-Docker deployment
-Swagger/OpenAPI documentation
+1. Role-based authorization (ADMIN / USER)
+2. Sweet items CRUD APIs
+3. Order management
+4. PostgreSQL integration
+5. Docker deployment
+6. Swagger/OpenAPI documentation
 
 👨‍💻 Author
 *Onkar Hadgaonkar*

@@ -33,18 +33,13 @@ This backend implements JWT-based authentication, follows a clean layered archit
 
 🛠️ **Tech Stack**
 
-*Language* - Java 17,
-Framework -  Spring Boot 4,
-
-Security	-  Spring Security + JWT,
-
-ORM       -  Spring Data JPA (Hibernate),
-
-Database	-  H2 (In-memory),
-
-Build Tool - Maven,
-
-API Testing	- Postman
+1. Language -    Java 17,
+2. Framework -   Spring Boot 4,
+3. Security	-    Spring Security + JWT,
+4. ORM      -    Spring Data JPA (Hibernate),
+5. Database	-    H2 (In-memory),
+6. Build Tool -  Maven,
+7. API Testing	- Postman
 
 📂 Project Structure
 

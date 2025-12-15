@@ -94,7 +94,7 @@ Accessing secured endpoints
 403 Forbidden without JWT
 
 **Postman Screenshots**
-screenshots/
+Screenshots/
 ├── register.png
 ├── login.png
 ├── token.png

@@ -31,7 +31,8 @@ This backend implements JWT-based authentication, follows a clean layered archit
 5. In-memory H2 database for easy local testing
 6. APIs tested using Postman
 
-🛠️ Tech Stack
+🛠️ **Tech Stack**
+
 Language - Java 17,
 Framework -  Spring Boot 4,
 Security	-  Spring Security + JWT,
@@ -70,7 +71,7 @@ src/main/java/com/sweetshop/sweetshop_api
 └── SweetshopApiApplication.java   # Application entry point
 
 
-🚀 How to Run the Project Locally
+🚀 **How to Run the Project Locally**
 
 **Prerequisites**
       Java 17 or higher
@@ -84,7 +85,7 @@ src/main/java/com/sweetshop/sweetshop_api
            mvn spring-boot:run
            The application will start at : http://localhost:8080
 
-🔐 Authentication & Security (JWT)
+🔐 **Authentication & Security (JWT)**
       This application uses stateless JWT authentication.
       Flow:
       User registers

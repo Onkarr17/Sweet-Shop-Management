@@ -159,6 +159,7 @@ POST /api/sweets/{id}/restock
 
 
 🧪 API Testing with Postman
+
 All APIs were tested using Postman.
 Tested Scenarios
 User registration
@@ -168,6 +169,7 @@ Accessing secured endpoints
 403 Forbidden without JWT
 
 Postman Screenshots
+
 Screenshots/
 ├── register.png
 ├── login.png

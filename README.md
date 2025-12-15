@@ -1,9 +1,10 @@
 🍬 Sweet Shop Management System – Backend API
 
-A secure and scalable Spring Boot REST API for managing a Sweet Shop application.
-This backend implements JWT-based authentication, follows clean architecture, and demonstrates real-world backend development practices suitable for production-ready systems.
+A secure and scalable Spring Boot REST API for managing a Sweet Shop.
+This backend implements JWT-based authentication, follows a clean layered architecture, and fulfills all core requirements of the Sweet Shop Management System.
 
 🚀 Features
+🔐 Authentication & Security
 1. JWT Authentication & Authorization
 2. User Registration & Login
 3. Secure password storage using BCrypt
@@ -12,6 +13,23 @@ This backend implements JWT-based authentication, follows clean architecture, an
 6. Configurable using application.properties
 7. RESTful API design
 8. In-memory H2 database for easy local testing
+
+🍭 Sweet Shop Core Functionality
+1. Add a new sweet with name, category, price, and quantity
+2. View all available sweets
+3. Search sweets by name, category, or price range
+4. Update sweet details
+5. Delete sweets
+6. Purchase sweets (decreases quantity)
+7. Restock sweets (increases quantity)
+   
+🧱 Architecture & Quality
+1. Clean separation of concerns (Controller / Service / Repository)
+2. Spring Data JPA with Hibernate
+3. Configurable via application.properties
+4. RESTful API design
+5. In-memory H2 database for easy local testing
+6. APIs tested using Postman
 
 🛠️ Tech Stack
 Language - Java 17,
@@ -23,14 +41,35 @@ Build Tool - Maven,
 API Testing	- Postman
 
 📂 Project Structure
+## 📂 Project Structure
 src/main/java/com/sweetshop/sweetshop_api
-1. controller – REST controllers (AuthController, TestController)
-2. dto – Request & response DTOs (LoginRequest, RegisterRequest, JwtResponse)
-3. entity – JPA entities (User, Role)
-4. repository – Spring Data JPA repositories
-5. security – JWT, security filters & configuration
-6. service – Business logic layer
-7. SweetshopApiApplication.java – Application entry point
+├── controller  
+│   ├── AuthController.java        # User registration & login APIs  
+│   └── SweetController.java       # Sweet CRUD & inventory APIs  
+│
+├── dto  
+│   ├── LoginRequest.java  
+│   ├── RegisterRequest.java  
+│   └── JwtResponse.java  
+│
+├── entity  
+│   ├── User.java                  # User entity  
+│   └── Sweet.java                 # Sweet entity  
+│
+├── repository  
+│   ├── UserRepository.java  
+│   └── SweetRepository.java  
+│
+├── security  
+│   ├── JwtAuthFilter.java  
+│   ├── JwtService.java  
+│   └── SecurityConfig.java  
+│
+├── service  
+│   └── SweetService.java          # Business logic layer  
+│
+└── SweetshopApiApplication.java   # Application entry point
+
 
 🚀 How to Run the Project Locally
 **Prerequisites**
@@ -90,6 +129,35 @@ GET /test/secure
 
          Access granted
 
+🍬 Sweet APIs (Protected – JWT Required)
+🔹 Add Sweet
+POST /api/sweets
+
+               {
+                   "name": "Kaju Katli",
+                    "category": "Indian",
+                    "price": 500,
+                    "quantity": 10
+               }
+🔹 Get All Sweets
+GET /api/sweets
+
+🔹 Search Sweets
+GET /api/sweets/search?name=Kaju&category=Indian
+
+🔹 Update Sweet
+PUT /api/sweets/{id}
+
+🔹 Delete Sweet
+DELETE /api/sweets/{id}
+
+🔹 Purchase Sweet
+POST /api/sweets/{id}/purchase
+
+🔹 Restock Sweet
+POST /api/sweets/{id}/restock
+
+
 🧪 API Testing with Postman
 All APIs were tested using Postman.
 Tested Scenarios
@@ -121,14 +189,15 @@ Authorized access to protected endpoints
               spring.jpa.show-sql=true
               jwt.secret=ThisIsASecretKeyForJwt1234567890
               jwt.expiration=86400000
+              server.port=${PORT:8080}
 
-🚀 Future Enhancements
-1. Role-based authorization (ADMIN / USER)
-2. Sweet items CRUD APIs
-3. Order management
-4. PostgreSQL integration
-5. Docker deployment
-6. Swagger/OpenAPI documentation
+🧪 Testing Approach
+The application was designed with testability in mind, keeping business logic
+inside the service layer.
+Due to time constraints, functionality was validated through manual API testing
+using Postman with real-world request flows and edge cases.
+Service-level unit tests can be added using JUnit and Mockito following a
+TDD (Test-Driven Development) approach.
 
 👨‍💻 Author
 *Onkar Hadgaonkar*

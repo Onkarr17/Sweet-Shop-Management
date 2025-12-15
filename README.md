@@ -58,31 +58,31 @@ src/main/java/com/sweetshop/sweetshop_api
 🔹 Register User
 POST /auth/register
 *Request Body*
-{
-  "username": "onkar",
-  "password": "password123"
-}
+            {
+               "username": "onkar",
+               "password": "password123"
+            }
 *Response*
-User registered successfully
+            User registered successfully
 
 🔹 Login User
 POST /auth/login
 *Request Body*
-{
-  "username": "onkar",
-  "password": "password123"
-}
+            {
+               "username": "onkar",
+               "password": "password123"
+            }
 *Response*
-{
-  "token": "eyJhbGciOiJIUzI1NiJ9..."
-}
+            {
+              "token": "eyJhbGciOiJIUzI1NiJ9..."
+            }
 
 🔹 Access Secured API
 GET /test/secure
 *Header*
-Authorization: Bearer <JWT_TOKEN>
+         Authorization: Bearer <JWT_TOKEN>
 *Response*
-Access granted
+         Access granted
 
 🧪 API Testing with Postman
 All APIs were tested using Postman.
@@ -106,16 +106,15 @@ Authorized access to protected endpoints
 
 ⚙️ Configuration
 **application.properties**
-spring.datasource.url=jdbc:h2:mem:testdb
-spring.datasource.driverClassName=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-
-jwt.secret=ThisIsASecretKeyForJwt1234567890
-jwt.expiration=86400000
+              spring.datasource.url=jdbc:h2:mem:testdb
+              spring.datasource.driverClassName=org.h2.Driver
+              spring.datasource.username=sa
+              spring.datasource.password=
+              spring.jpa.hibernate.ddl-auto=update
+              spring.jpa.show-sql=true
+              jwt.secret=ThisIsASecretKeyForJwt1234567890
+              jwt.expiration=86400000
 
 🚀 Future Enhancements
 Role-based authorization (ADMIN / USER)
@@ -126,7 +125,7 @@ Docker deployment
 Swagger/OpenAPI documentation
 
 👨‍💻 Author
-Onkar Hadgaonkar
+*Onkar Hadgaonkar*
 Backend Developer | Java | Spring Boot
 
 

@@ -205,7 +205,7 @@ Service-level unit tests can be added using JUnit and Mockito following a
 TDD (Test-Driven Development) approach.
 
 👨‍💻 Author: 
-  **Onkar Hadgaonkar** :  
-  Backend Developer | Java | Spring Boot
+
+**Onkar Hadgaonkar** :
 
 

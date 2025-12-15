@@ -167,7 +167,8 @@ JWT token generation
 Accessing secured endpoints
 403 Forbidden without JWT
 
-**Postman Screenshots**
+Postman Screenshots
+
 Screenshots/
 ├── register.png
 ├── login.png

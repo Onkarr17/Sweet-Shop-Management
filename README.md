@@ -14,12 +14,12 @@ This backend implements JWT-based authentication, follows clean architecture, an
 8. In-memory H2 database for easy local testing
 
 🛠️ Tech Stack
-Language - Java 17
-Framework -  Spring Boot 4
-Security	-  Spring Security + JWT
-ORM       -  Spring Data JPA (Hibernate)
-Database	-  H2 (In-memory)
-Build Tool - Maven
+Language - Java 17,
+Framework -  Spring Boot 4,
+Security	-  Spring Security + JWT,
+ORM       -  Spring Data JPA (Hibernate),
+Database	-  H2 (In-memory),
+Build Tool - Maven,
 API Testing	- Postman
 
 📂 Project Structure

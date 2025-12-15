@@ -33,8 +33,7 @@ This backend implements JWT-based authentication, follows a clean layered archit
 
 🛠️ **Tech Stack**
 
-Language - Java 17,
-
+*Language* - Java 17,
 Framework -  Spring Boot 4,
 
 Security	-  Spring Security + JWT,

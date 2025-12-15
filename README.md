@@ -24,14 +24,13 @@ API Testing	- Postman
 
 📂 Project Structure
 src/main/java/com/sweetshop/sweetshop_api
-│
-├── controller        # REST Controllers
-├── dto               # Request / Response DTOs
-├── entity            # JPA Entities
-├── repository        # Data Access Layer
-├── security          # JWT, Security Config, Filters
-├── service           # Business Logic
-└── SweetshopApiApplication.java
+1. controller – REST controllers (AuthController, TestController)
+2. dto – Request & response DTOs (LoginRequest, RegisterRequest, JwtResponse)
+3. entity – JPA entities (User, Role)
+4. repository – Spring Data JPA repositories
+5. security – JWT, security filters & configuration
+6. service – Business logic layer
+7. SweetshopApiApplication.java – Application entry point
 
 🚀 How to Run the Project Locally
 **Prerequisites**

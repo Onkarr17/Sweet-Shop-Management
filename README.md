@@ -34,25 +34,25 @@ src/main/java/com/sweetshop/sweetshop_api
 
 🚀 How to Run the Project Locally
 **Prerequisites**
-Java 17 or higher
-Maven 3.9+
-IDE (IntelliJ IDEA / VS Code)
-Postman
+         Java 17 or higher
+         Maven 3.9+
+         IDE (IntelliJ IDEA / VS Code)
+         Postman
 
-git clone https://github.com/Onkarr17/Sweet-Shop-Management.git
-cd sweetshop-api
-mvn clean install
-mvn spring-boot:run
-The application will start at : http://localhost:8080
+           git clone https://github.com/Onkarr17/Sweet-Shop-Management.git
+           cd sweetshop-api
+           mvn clean install
+           mvn spring-boot:run
+           The application will start at : http://localhost:8080
 
 🔐 Authentication & Security (JWT)
-This application uses stateless JWT authentication.
-Flow:
-User registers
-User logs in
-JWT token is generated
-Token is sent in the Authorization header
-Secured APIs validate the token
+      This application uses stateless JWT authentication.
+      Flow:
+      User registers
+      User logs in
+      JWT token is generated
+      Token is sent in the Authorization header
+      Secured APIs validate the token
 
 📬 API Endpoints
 🔹 Register User
